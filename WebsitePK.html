@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+  <title>Peter King</title>
+  <style>
+    body {
+      text-align: center;
+      background: url("http://imgur.com/7t4CUSt.jpeg");
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      font-family: arial;
+    }
+    
+    p {
+      font-size: 21px;
+      margin: 0 auto;
+    }
+
+    input {
+      border: 0;
+      padding: 3px;
+      font-size: 15px;
+    }
+    
+    <legend> {
+      text-align: center;
+    }
+    form {
+      background-color:#235;
+      opacity: 0.85;
+      display: inline-block;
+      border: 5px solid white;
+      border-radius:10%;
+    }
+     form:hover {
+     border-color:#1589FF;
+     }
+
+     input[type="email"] {
+     margin: 10px 0;
+     }
+     text {
+     margin: 10px 20px 0 20px;
+     } 
+    
+     input[type="submit"] {
+      color: white;
+      Margin: 5px 0 10px 0;
+     }
+     
+     input[type="submit"]:hover {
+      background: red;
+     }
+
+
+.container {
+border-radius: 100% 100%;
+  position: relative;
+  top: 20px;
+  margin: 0 auto;
+  width: 15%;
+  border: 4px solid white;
+
+}
+
+.image {
+border-radius: 100% 100%;
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+
+.overlay {
+border-radius: 100% 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-image: url("http://imgur.com/Yihj1ti.jpeg");
+background-position: center;    
+background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+       
+  </style>
+</head>
+ 
+<body>
+  <div class="container">
+  <img src="http://i.imgur.com/h93l1NF.png" class="image">
+  <div class="overlay">
+   </div>
+</div>
+<br><br>
+  <p>Hi! I'm Peter King, a Marketing graduate from Virginia Tech and a snowboarder.</p>
+  <p>
+   <br>Contact information:<br>
+   Email: ptk726@gmail.com
+  </p>
+  <br><br><br><br><br><br><br><br><br><br><br>
+  <p>
+    <form>
+    <br><text>Which winter sport do you do?</text><br><br>
+      <input type="radio" name="sport" value="snowboarder" checked> Snowboard<br>
+      <input type="radio" name="sport" value="Skier"> Ski<br>
+      <input type="radio" name="sport" value="Nther"> Other<br>
+      <input type="radio" name="sport" value="None"> None<br>
+      <input type="email" value="Your Email"><br>
+      <input type="submit">
+    </form>
+  </p>
+</body>
